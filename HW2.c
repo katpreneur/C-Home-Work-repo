@@ -4,9 +4,8 @@
 
 void check_vowel(char ch)
 {
-	if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch =='u'){
+	if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch =='u'){
 		printf("This is a vowel %c\n", ch);
-
 	}
 }
 
@@ -17,8 +16,7 @@ int main(int argc, char *argv[])
 	{
 		printf("Please enter the word\n");
 		fgets(input, 60, stdin);
-		int i = 0;
-		for(i = 0; i < strlen(input); i++) {
+		for(int i = 0; i < strlen(input); i++) {
 			printf("%c\n", input[i]);
 
 			check_vowel(input[i]);
@@ -26,5 +24,4 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
-
 
